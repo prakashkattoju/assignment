@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        .nav-header-right {
+            width: 100%;
+
+            .navbar-nav {
+                flex-direction: row;
+                gap: 20px
+            }
+        }
+
+        .nav-header-left {
+            display: none;
+        }
+    }
+
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+        border: 0;
+        padding-left: 0;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .dashboard-panel {
+        margin-top: 70px;
+    }
+}

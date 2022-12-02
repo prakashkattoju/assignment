@@ -1,0 +1,39 @@
+<aside class="sidebar">
+    <div class="sidebar-head">
+        <div class="logo">
+            <div class="logo-icon"><img src="../../assets/images/logo.png" alt="logo" /></div>
+            <span class="logo-text">Assignment</span>
+        </div>
+    </div>
+    <div class="sidebar-navi">
+        <ul>
+            <li class="has-sub" (click)="showSubmenu()" [ngClass]="status ? 'open' : ''">
+                <a>
+                    <i-feather name="home"></i-feather>
+                    <span class="sidebar-menu-title">Dashboard</span>
+                    <span class="badge rounded-pill text-bg-danger">2</span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a><span>eCommerce</span></a></li>
+                    <li><a><span>Analytics</span></a></li>
+                </ul>
+            </li>
+            <li class="has-sub" (click)="showSubmenu()" [ngClass]="status ? 'open' : ''">
+                <a>
+                    <i-feather name="monitor"></i-feather>
+                    <span class="sidebar-menu-title">Apps</span>
+                </a>
+                <ul class="sub-menu">
+                    <li><a><span>Chat</span></a></li>
+                    <li><a><span>Chat NgRx</span></a></li>
+                    <li><a><span>Taskboard</span></a></li>
+                    <li><a><span>Taskboard NgRx</span></a></li>
+                </ul>
+            </li>
+            <li><a>
+                    <i-feather name="layers"></i-feather>
+                    <span class="sidebar-menu-title">Cards</span>
+                </a></li>
+        </ul>
+    </div>
+</aside>

@@ -1,0 +1,102 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+  <div class="container-fluid flex-wrap">
+    <div class="nav-header-right">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav">
+        <li class="flex-shrink-0 nav-item me-2">
+          <a href="" class="nav-link text-decoration-none">
+            <i-feather name="maximize" class="nav-icon"></i-feather>
+          </a>
+        </li>
+        <li class="flex-shrink-0 nav-item me-2">
+          <a href="" class="nav-link text-decoration-none">
+            <i-feather name="shopping-cart" class="nav-icon"></i-feather>
+          </a>
+        </li>
+        <li ngbDropdown class="flex-shrink-0 nav-item dropdown">
+          <a id="dropdownApps" class="nav-link position-relative text-decoration-none dropdown-toggle" ngbDropdownToggle>
+            <i-feather name="edit" class="nav-icon"></i-feather> Apps
+          </a>
+          <ul class="dropdown-menu apps-dropdown shadow" ngbDropdownMenu aria-labelledby="dropdownApps">
+            <li><a class="dropdown-item" href="#">Chat</a></li>
+            <li><a class="dropdown-item" href="#">TaskBoard</a></li>
+            <li><a class="dropdown-item" href="#">Calender</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <div class="nav-header-left">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li ngbDropdown class="flex-shrink-0 nav-item mt-1 dropdown">
+            <a id="dropdownNotification" class="nav-link position-relative text-decoration-none dropdown-toggle" ngbDropdownToggle>
+              <i-feather name="bell" class="nav-icon"></i-feather>
+              <span class="notification position-absolute translate-middle badge rounded-pill bg-danger">4<span class="visually-hidden">notifications</span></span>
+            </a>
+            <div class="dropdown-menu notification-dropdown shadow" ngbDropdownMenu aria-labelledby="dropdownNotification">
+              <div class="notification-list list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                  <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                  <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                      <h6 class="mb-0">List group item heading</h6>
+                      <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">now</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                  <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                  <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                      <h6 class="mb-0">Another title here</h6>
+                      <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it
+                        wraps to a new line.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">3d</small>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                  <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                  <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                      <h6 class="mb-0">Third heading</h6>
+                      <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                    </div>
+                    <small class="opacity-50 text-nowrap">1w</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li ngbDropdown class="flex-shrink-0 mt-1 nav-item">
+            <a href="" id="settings" class="nav-link text-decoration-none">
+              <i-feather name="sliders" class="nav-icon"></i-feather>
+            </a>
+          </li>
+          <li ngbDropdown class="flex-shrink-0 me-0 nav-item dropdown">
+            <a id="dropdownProfile" class="nav-link text-decoration-none dropdown-toggle" ngbDropdownToggle>
+              <img src="https://github.com/mdo.png" alt="mdo" width="36" height="36" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu shadow" ngbDropdownMenu aria-labelledby="dropdownProfile">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

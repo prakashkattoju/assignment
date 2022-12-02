@@ -1,0 +1,123 @@
+@mixin font($font, $style: normal, $weight: normal) {
+    font-family: $font, 'Helvetice Neue', Helvetica, Arial, sans-serif;
+    font-style:  $style;
+    font-weight: $weight;
+}
+
+@mixin clearfix {
+	zoom: 1;
+	clear: both;  
+	&:before, &:after{
+		content: "";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}	
+}
+
+@mixin box-shadow($val...) {
+	-webkit-box-shadow: $val;
+  -moz-box-shadow:    $val;
+  box-shadow:         $val;
+}
+
+@mixin border-radius($val) {
+	-webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  border-radius: $val;
+}
+@mixin display_flex($display){
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+}
+@mixin flex_justify_content($content){
+    -webkit-justify-content: $content;
+    -moz-justify-content: $content;
+    -ms-justify-content: $content;
+    -o-justify-content: $content;
+    justify-content: $content;
+}
+@mixin flex_align_items($content){
+    -webkit-align-items: $content;
+    -moz-align-items: $content;
+    -ms-align-items: $content;
+    -o-align-items: $content;
+    align-items: $content;
+}
+@mixin flex_wrap($content){
+    -webkit-flex-wrap: $content;
+    -moz-flex-wrap: $content;
+    -ms-flex-wrap: $content;
+    -o-flex-wrap: $content;
+    flex-wrap: $content;
+}
+
+@mixin transition($transition-property, $transition-time, $method, $delay: 0s) {
+    -webkit-transition: $transition-property $transition-time $method $delay;
+    -moz-transition: $transition-property $transition-time $method $delay;
+    -ms-transition: $transition-property $transition-time $method $delay;
+    -o-transition: $transition-property $transition-time $method $delay;
+    transition: $transition-property $transition-time $method $delay;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+
+// animation mixin
+@mixin animation ($animation, $duration, $delay: 0s) {
+-webkit-animation-delay: $delay;
+-webkit-animation-duration: $duration;
+-webkit-animation-name: $animation;
+-webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+-moz-animation-delay: $delay;
+-moz-animation-duration: $duration;
+-moz-animation-name: $animation;
+-moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+-o-animation-delay: $delay;
+-o-animation-duration: $duration;
+-o-animation-name: $animation;
+-o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+animation-delay: $delay;
+animation-duration: $duration;
+animation-name: $animation;
+animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+} 
+
+// keyframes mixin
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+} 
+
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
