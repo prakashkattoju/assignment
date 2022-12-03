@@ -574,12 +574,16 @@ h6 {
                         >i-feather {
                             margin-right: 1px;
                         }
+                        &::after{
+                            content: none;
+                        }
                     }
-
-                    &:first-child {
-                        a {
-                            background-color: $white;
-                            color: $danger;
+                    &.has-sub{
+                        &:first-child {
+                            > a {
+                                background-color: $white;
+                                color: $danger;
+                            }
                         }
                     }
                 }
