@@ -74,11 +74,11 @@ h6 {
             font-weight: 400;
             display: flex;
             gap: 10px;
-            align-items: end;
+            align-items: center;
             line-height: 1;
 
             img {
-                width: 38px;
+                width: 30px;
             }
         }
     }
@@ -550,7 +550,10 @@ h6 {
 
             .sidebar-head {
                 .logo {
-                    .logo-text {
+                    img{
+                        width: 40px;
+                    }
+                    .logo-text, .sidebar-trigger {
                         display: none;
                     }
                 }

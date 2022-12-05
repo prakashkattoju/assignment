@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { IconsModule } from './icon.module';
+import { NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { IconsModule } from './icon.module';
     BrowserModule,
     AppRoutingModule,
     IconsModule,
-    NavbarComponent
+    NavbarComponent,
+    NgbProgressbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
